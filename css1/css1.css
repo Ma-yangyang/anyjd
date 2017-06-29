@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+    box-sizing:border-box;
+}
+body{
+    background: #f4f4f4;
+}
+/*header   绝对定位于banner*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 6.4rem;
+    height: 0.8rem;
+    background: rgba(255,0,0,0.7);
+}
+header .logo{
+    float: left;
+    width: 1.11rem;
+    height: 0.8rem;
+    background: url("../images/sprites.png") no-repeat 0 -2.1rem;
+    /*整张图大小*/
+    background-size:  4rem 4rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+.later_header{
+    position: relative;
+    float: left;
+    font-size: 0rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+.later_header input{
+    width: 4rem;
+    height:0.6rem;
+    border-radius: 0.4rem;
+    border: 0.01rem  solid black;
+    padding-left: 0.5rem;
+    font-size: 0.25rem;
+    outline: none;
+}
+.later_header .search{
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url("../images/sprites.png") no-repeat -1.12rem -2.1rem;
+    background-size:  4rem 4rem;
+    position: absolute;
+    top: 0.05rem;
+    left: 0.05rem;
+}
+.login{
+    float: left;
+    font-size: 0.3rem;
+    color: white;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-left: 0.2rem;
+}
+
+/*轮播   相对定位*/
+.swiper-container{
+    width: 6.4rem;
+    height: 3.5rem;
+    position: relative;
+}
+.swiper-wrapper{
+    width: 50rem;
+    height: 3.5rem;
+}
+.swiper-wrapper .swiper-slide{
+    width:6.4rem;
+    height: 3.5rem;
+}
+.swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/*分类查询  better里 8个小div*/
+.better{
+    width: 6.4rem;
+    height: 2.9rem;
+    padding-top: 0.12rem;
+    background: white;
+    border-bottom: 0.01rem solid #e1e1e1;
+}
+.better_one li{
+    height:1.2rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+    float: left;
+    margin-top: 0.08rem;
+}
+.better_one li img{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.05rem;
+}
+.better_one li p{
+    margin-top: 0.11rem;
+    font-size: 0.18rem;
+    text-align: center;
+}
+/*main*/
+.main{
+    width: 6.3rem;
+    height: 3.2rem;
+    background: white;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    border-top: 0.01rem solid  #e1e1e1;
+}
+.main:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.main_header{
+    height: 0.8rem;
+}
+.main_header .pic{
+    width: 0.4rem;
+    height: 0.5rem;
+    float: left;
+}
+.main_header .pic img{
+    width: 100%;
+    height: 100%;
+    margin: 0.06rem 0 0 0.1rem;
+}
+.main_header p{
+    color: #dc575a;
+    font-size: 0.3rem;
+    width: 1.2rem;
+    height: 0.5rem;
+    float: left;
+    line-height: 0.7rem;
+    margin-left: 0.2rem;
+}
+/*计时器*/
+.main .hh{
+    float: left;
+    font-size: 0.2rem;
+    margin: 0.2rem 0 0 0.2rem;
+}
+.main .hh span{
+    display: inline-block;
+    width: 0.17rem;
+    height: 0.21rem;
+    text-align: center;
+    color: white;
+    line-height: 0.2rem;
+    background: black;
+}
+.main_header a{
+    float: right;
+    font-size: 0.3rem;
+    height: 0.5rem;
+    line-height: 0.55rem;
+    margin-right: 0.1rem;
+    color: #343434;
+}
+.main_mine{
+    width: 6.3rem;
+    height: 1.86rem;
+    margin-bottom: 0.1rem;
+}
+.main_mine .be{
+    width: 2.1rem;
+    height: 1.86rem;
+    float: left;
+}
+.main_mine .be .picc{
+    width: 2.1rem;
+    height: 1.34rem;
+    margin: 0 auto;
+    border-right: 0.01rem solid #e0e0e0;
+}
+.main_mine .be .picc img{
+    width: 1.34rem;
+    height: 1.34rem;
+    margin: 0 0.4rem;
+}
+.main_mine .be p:nth-of-type(1){
+    color: red;
+}
+.main_mine  p{
+    font-size: 0.2rem;
+    text-align: center;
+    height: 0.36rem;
+    line-height: 0.5rem;
+}
+/*京东超市*/
+.up{
+    width: 6.3rem;
+    height: 3.2rem;
+    background: white;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    border-top: 0.01rem solid  #e1e1e1;
+}
+.up .think{
+    font-size: 0.22rem;
+    padding: 0.1rem 0 0 0.2rem;
+    color: #626262;
+    height: 0.55rem;
+    line-height: 0.35rem;
+    border-bottom: 0.01rem solid #dfdfdf;
+    background: white;
+}
+.up .cj{
+    margin-bottom: 0.1rem;
+}
+.up .cj:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+/*左侧*/
+.up .cj .cj_l{
+    float: left;
+}
+.up .cj .cj_l .cj_l1{
+    width: 3.16rem;
+    height: 1.71rem;
+    border-bottom: 0.01rem solid white;
+
+}
+.cj_l .cj_l1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.cj_l .cj_l2{
+    width: 3.16rem;
+    height: 1.71rem;
+}
+.cj_l .cj_l2 img{
+    width: 100%;
+    height: 100%;
+}
+/*右侧*/
+.up .cj .cj_r{
+    float: right;
+    width: 3.14rem;
+    height: 3.4rem;
+    border-left: 0.01rem solid white;
+}
+.up .cj .cj_r img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
